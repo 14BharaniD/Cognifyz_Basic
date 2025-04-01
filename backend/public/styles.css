@@ -1,0 +1,145 @@
+/* logical-properties-disable */
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+}
+
+h2 {
+    color: #FF7F24; /* Orange heading */
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+
+form, .success-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #FF7F24;
+    box-shadow: 0 0 0 3px rgba(255, 127, 36, 0.2);
+}
+
+#radio{
+    /* background-color: aqua; */
+    display: flex;
+    /* align-items: center; */
+    /* gap: 10px; */
+
+
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background: #FF7F24;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #E56717;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 127, 36, 0.25);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.5;
+}
+
+a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #FF7F24;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #E56717;
+    text-decoration: underline;
+}
+
+/* Add some subtle background pattern for more depth */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.8) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.8) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-color: white;
+    z-index: -1;
+}
+
+/* Add specific styling for success page */
+.success-container {
+    text-align: center;
+}
+
+.success-container p {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
